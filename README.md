@@ -29,6 +29,17 @@ python run.py
 
 Requirements: Python 3.10+, Node 18+, `ffmpeg` on PATH for local transcription. Docker is optional (sandbox runs).
 
+## Accounts and leaderboard
+
+- Students register and log in with **a name and a password only**. Accounts and sessions are stored in the same
+  SQLite database (`users`, `user_sessions`; scrypt password hashes, hashed session tokens). Every API call is scoped
+  to the logged-in student; one student cannot see another's jobs, repos, interviews or evidence.
+- The first account created on an install that already has data adopts that data.
+- **Leaderboard** (sidebar → Step 4): students preparing for the same real posting (matched by URL, provider job id or
+  identical text) are ranked by `0.60 × code-evidence coverage + 0.25 × mock-interview average + 0.15 × code-defense average`.
+  Anything not attempted counts as 0. Students can join a job another student added, and can hide themselves in Settings.
+  It is a coaching ranking, not a hiring prediction.
+
 ## Configure (all optional except a real job + repo)
 
 Use **Settings → Integrations & privacy** in the UI (credentials are verified, then stored encrypted) or `.env`
@@ -103,6 +114,6 @@ All of these are automated tests: `python -m pytest -q` (37 tests; GitHub is rep
 - Non-Python languages use lexical detectors (comment-stripped patterns + bracket matching), shallower than the Python AST.
 - Soft skills and DSA aren't verifiable from code; they appear as "not demonstrated in this scope" with that explanation.
 - LeetCode data uses LeetCode's unofficial public GraphQL endpoint (best effort; manual entry is labelled user-supplied).
-- Single local user (no login). All tables carry `user_id` for a future multi-user setup.
+- Accounts are local to this installation (no password reset or e-mail; an admin can delete the SQLite row).
 - Sandbox needs Docker; without it the feature is disabled and explains why.
 - Interview scores and the coverage indicator are coaching heuristics, not hiring predictions.
