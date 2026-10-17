@@ -1,0 +1,8 @@
+{
+  "company": "Minimalist Inc",
+  "role": "Python Script Writer",
+  "source_url": "https://example.com/jobs/minimal",
+  "source_type": "url",
+  "raw_text": "Role: Python Script Writer\nCompany: Minimalist Inc\n\nWe need someone who knows Python.\nBasic Git usage is appreciated.",
+  "expected_warning": "Low-extraction warning"
+}

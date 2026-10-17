@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "repo": "candidate/payment-gateway",
+  "branch": "main",
+  "analyzed_paths": ["main.py", "README.md"],
+  "latest_commit_sha": "a1b2c3d4e5f67890123456789abcdef012345678",
+  "per_skill_verdicts": [
+    {
+      "skill": "API development",
+      "category": "framework",
+      "priority": "must-have",
+      "verdict": "Demonstrated",
+      "confidence": 0.95,
+      "explanation": "Demonstrated in main.py:16-36 (production-grade) at commit a1b2c3d.",
+      "jd_quote": "Design and implement resilient RESTful APIs handling high-throughput financial transactions.",
+      "cited_evidence": [
+        {
+          "id": "ev_api_001",
+          "skill": "API development",
+          "repo": "candidate/payment-gateway",
+          "file": "main.py",
+          "line_start": 16,
+          "line_end": 36,
+          "commit_sha": "a1b2c3d4e5f67890123456789abcdef012345678",
+          "snippet": "@app.get(\"/api/v1/payments\")\ndef list_payments():\n    return transactions\n\n@app.post(\"/api/v1/payments\")\ndef create_payment(req: PaymentRequest):\n    ...",
+          "depth": "production-grade",
+          "confidence": 0.95,
+          "detector": "api_detector",
+          "source_type": "github"
+        }
+      ]
+    },
+    {
+      "skill": "SQL",
+      "category": "database",
+      "priority": "must-have",
+      "verdict": "Not demonstrated in this scope",
+      "confidence": 0.90,
+      "explanation": "Searched 2 files across repository 'candidate/payment-gateway' on branch 'main' for SQL patterns and implementations, but found no verified evidence. (Note: missing evidence does not imply lack of skill).",
+      "jd_quote": "Architect relational database schemas, write optimized SQL queries, and manage Postgres database migrations.",
+      "cited_evidence": []
+    },
+    {
+      "skill": "Testing",
+      "category": "testing",
+      "priority": "must-have",
+      "verdict": "Not demonstrated in this scope",
+      "confidence": 0.90,
+      "explanation": "Searched 2 files across repository 'candidate/payment-gateway' on branch 'main' for Testing patterns and implementations, but found no verified evidence. (Note: missing evidence does not imply lack of skill).",
+      "jd_quote": "Drive test automation by writing comprehensive unit testing and integration tests with pytest.",
+      "cited_evidence": []
+    },
+    {
+      "skill": "Python",
+      "category": "language",
+      "priority": "must-have",
+      "verdict": "Demonstrated",
+      "confidence": 0.95,
+      "explanation": "Demonstrated in main.py:1-36 (standard implementation) at commit a1b2c3d.",
+      "jd_quote": "Write clean, maintainable Python 3 services utilizing FastAPI endpoints and asynchronous programming.",
+      "cited_evidence": [
+        {
+          "id": "ev_py_001",
+          "skill": "Python",
+          "repo": "candidate/payment-gateway",
+          "file": "main.py",
+          "line_start": 1,
+          "line_end": 7,
+          "commit_sha": "a1b2c3d4e5f67890123456789abcdef012345678",
+          "snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel",
+          "depth": "standard implementation",
+          "confidence": 0.95,
+          "detector": "language_detector",
+          "source_type": "github"
+        }
+      ]
+    }
+  ]
+}

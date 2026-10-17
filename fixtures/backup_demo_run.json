@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-16T12:00:00Z",
+  "demo_scenario": "Phase 1: Real Posting -> Repo Evidence -> Initial Gaps -> Commit -> Live Reassessment",
+  "step_1_baseline": {
+    "version": 1,
+    "commit": "a1b2c3d4e5f67890123456789abcdef012345678",
+    "gaps": [
+      {"skill": "SQL", "verdict": "Not demonstrated in this scope"},
+      {"skill": "Testing", "verdict": "Not demonstrated in this scope"}
+    ],
+    "demonstrated": [
+      {"skill": "API development", "verdict": "Demonstrated", "file": "main.py:16-36"},
+      {"skill": "Python", "verdict": "Demonstrated", "file": "main.py:1-7"}
+    ]
+  },
+  "step_2_trigger_commit": {
+    "sha": "c78a123f890123456789abcdef0123456789abcd",
+    "message": "feat: add SQL persistence queries and pytest test suite",
+    "changed_files": ["db.py", "test_main.py"]
+  },
+  "step_3_updated_assessment": {
+    "version": 2,
+    "commit": "c78a123f890123456789abcdef0123456789abcd",
+    "diff": [
+      {
+        "skill": "SQL",
+        "previous_verdict": "Not demonstrated in this scope",
+        "new_verdict": "Demonstrated",
+        "explanation": "SQL: Not demonstrated in this scope -> Demonstrated (commit c78a123, db.py:8-38)."
+      },
+      {
+        "skill": "Testing",
+        "previous_verdict": "Not demonstrated in this scope",
+        "new_verdict": "Demonstrated",
+        "explanation": "Testing: Not demonstrated in this scope -> Demonstrated (commit c78a123, test_main.py:7-24)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "company": "Stripe",
+  "role": "Backend Engineer",
+  "source_url": "https://stripe.com/jobs/backend-engineer-api",
+  "source_type": "url",
+  "raw_text": "Backend Engineer at Stripe\nLocation: Remote / San Francisco\n\nAbout the Role:\nWe are looking for a Backend Engineer to build robust, scalable payment APIs and platform services.\n\nKey Responsibilities:\n- Design and implement resilient RESTful APIs handling high-throughput financial transactions.\n- Write clean, maintainable Python 3 services utilizing FastAPI endpoints and asynchronous programming.\n- Architect relational database schemas, write optimized SQL queries, and manage Postgres database migrations.\n- Drive test automation by writing comprehensive unit testing and integration tests with pytest.\n- Build and maintain containerized microservices using Docker and automated CI/CD deployment pipelines.\n- Collaborate across cross-functional teams and follow version control practices with Git and GitHub.\n- Ensure deep understanding of data structures, algorithms, and OOP software architecture patterns.\n- Nice to have: Experience with cloud deployment on AWS or Kubernetes.\n- Nice to have: Familiarity with distributed caching using Redis."
+}

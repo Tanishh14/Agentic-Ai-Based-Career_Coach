@@ -1,0 +1,79 @@
+{
+  "company": "CloudScale Systems",
+  "role": "Backend Software Engineer",
+  "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026",
+  "source_type": "lever",
+  "raw_text": "Role: Backend Software Engineer\nCompany: CloudScale Systems\nSource: https://jobs.lever.co/cloudscale/backend-engineer-2026\n\nAbout the Role:\nCloudScale is looking for a Backend Software Engineer to help build our core distributed platform.\nYou will write clean, well-tested code, build scalable APIs, and design efficient relational database models.\n\nKey Requirements & Responsibilities:\n- Experience building RESTful APIs with FastAPI or Express\n- Strong proficiency in Python for backend service development\n- Relational database experience with SQL queries, schema design, and Postgres\n- Dedicated experience with automated testing using pytest or unit tests\n- Familiarity with containerization and Docker deployment workflows\n- Understanding of Git version control and collaborative branching\n- Strong foundation in Data Structures and Algorithms\n- Experience building microservices with Go is a plus\n- Knowledge of CI/CD continuous integration pipelines\n- Understanding of Object-Oriented Programming (OOP) principles",
+  "requirements": [
+    {
+      "skill": "API development",
+      "category": "framework",
+      "priority": "must-have",
+      "jd_quote": "Experience building RESTful APIs with FastAPI or Express",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Python",
+      "category": "language",
+      "priority": "must-have",
+      "jd_quote": "Strong proficiency in Python for backend service development",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "SQL",
+      "category": "database",
+      "priority": "must-have",
+      "jd_quote": "Relational database experience with SQL queries, schema design, and Postgres",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Testing",
+      "category": "testing",
+      "priority": "must-have",
+      "jd_quote": "Dedicated experience with automated testing using pytest or unit tests",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Deployment",
+      "category": "devops",
+      "priority": "must-have",
+      "jd_quote": "Familiarity with containerization and Docker deployment workflows",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Git",
+      "category": "devops",
+      "priority": "must-have",
+      "jd_quote": "Understanding of Git version control and collaborative branching",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Data Structures",
+      "category": "concepts",
+      "priority": "must-have",
+      "jd_quote": "Strong foundation in Data Structures and Algorithms",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Go",
+      "category": "language",
+      "priority": "nice-to-have",
+      "jd_quote": "Experience building microservices with Go is a plus",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "Deployment",
+      "category": "devops",
+      "priority": "nice-to-have",
+      "jd_quote": "Knowledge of CI/CD continuous integration pipelines",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    },
+    {
+      "skill": "OOP",
+      "category": "concepts",
+      "priority": "must-have",
+      "jd_quote": "Understanding of Object-Oriented Programming (OOP) principles",
+      "source_url": "https://jobs.lever.co/cloudscale/backend-engineer-2026"
+    }
+  ]
+}
